@@ -214,7 +214,8 @@ var Updater = {
       request(
         {
           uri: url,
-          encoding: null
+          encoding: null,
+          headers: this.setup.headers
         },
         function (error, response, body) {
           if (error) {
